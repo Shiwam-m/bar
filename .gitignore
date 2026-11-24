@@ -1,0 +1,39 @@
+# Specifically ignored files requested by user
+faltu_files.ipynb
+Molecule Air Bar, Lucknow.html
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+.venv/
+venv/
+env/
+
+# Build artifacts
+frontend/dist/
+dist/
+build/
+
+# Python & test caches
+__pycache__/
+*/__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local database & logs
+*.db
+*.sqlite3
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

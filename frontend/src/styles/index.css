@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg: #0f1012;
+  --panel: #17181b;
+  --ink: #f1ede4;
+  --soft: #9a968c;
+  --gold: #c8a45a;
+  --gold-dark: #b89347;
+  --line: rgba(241, 237, 228, 0.14);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+/* Custom patterned border accent from original website */
+.pat-accent {
+  width: 46%;
+  height: 20px;
+  background: repeating-linear-gradient(45deg, transparent 0 4px, rgba(200, 164, 90, 0.6) 4px 5px),
+              repeating-linear-gradient(-45deg, transparent 0 4px, rgba(200, 164, 90, 0.6) 4px 5px);
+}
+
+/* 3D tilt perspective container */
+.perspective-container {
+  perspective: 1000px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1012;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a251b;
+  border-radius: 4px;
+  border: 1px solid rgba(200, 164, 90, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c8a45a;
+}
